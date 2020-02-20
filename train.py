@@ -140,7 +140,7 @@ class My_convolution_neural_net(torch.nn.Module):
         #print(x3.size())
         return x3.view(x3.size(0),x3.size(1))
 
-def train_with_Conv(BATCH_SIZE,epoch):
+def train_with_Conv(BATCH_SIZE):
     epoch=80 #we set after playing with different learning rates and number of total epochs
     full_dataset=MyDatasetForConvNN()
     train_size = int(0.8 * len(full_dataset))
